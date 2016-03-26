@@ -12,7 +12,7 @@ int main()
      *	Considered about the time of excute, generate 100 data only
      */
     for(i=0; i<100; i++) {
-        n = (rand() / (i+1)) % 50 + 1;
+        n = rand() % 50 + 1;
         fprintf(fp,"%d\n",n);
         for(j=0; j<n; j++) {
             int value = rand() % 1000 + 1;
