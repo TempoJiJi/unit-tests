@@ -11,17 +11,17 @@ int main()
     /*
      *	Considered about the time of excute, generate 100 data only
      */
-    for(i=0; i<100; i++){
+    for(i=0; i<100; i++) {
         n = (rand() / (i+1)) % 50 + 1;
         fprintf(fp,"%d\n",n);
-        for(j=0; j<n; j++){
+        for(j=0; j<n; j++) {
             int value = rand() % 1000 + 1;
             fprintf(fp,"%d ",value);
         }
-	if(i==99)
-	    fprintf(fp,"\n");
-	else
-	    fprintf(fp,"\n\n");
+        if(i==99)
+            fprintf(fp,"\n");
+        else
+            fprintf(fp,"\n\n");
     }
     fclose(fp);
 }

@@ -16,12 +16,12 @@ void bubble_sort(List **head)
     /* Counting num list */
     while (sub_head && sub_head->next) {
         num_list = num_list + 1;
-	/* Circular list  */
-	if(sub_head->next == *head)
-	    break;
+        /* Circular list  */
+        if(sub_head->next == *head)
+            break;
         sub_head = sub_head->next;
     }
-    
+
     for (i = num_list; i > 0; i--) {
         sub_head = *head;
         pre_sub_head = head;
